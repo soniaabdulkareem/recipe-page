@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(30, 54%, 90%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,h2{
+    font-family: "young serif", serif;
+}
+.container{
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 10px;
+    width: 280px;
+    margin-top: 20px;
+    
+}
+.recipe-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.recipe-page .banner img{
+    border-radius: 5px;
+    width: 260px;
+}
+.sub-title{
+    padding-top: 20px;
+}
+.sub-title h1{
+    font-size:25px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+.sub-title p{
+    color: hsl(30, 10%, 34%);
+    font-size: 12px;
+    font-family: "outfit", sans-serif;
+    line-height: 1.4;
+    padding-top: 15px;
+}
+
+.prep-box{
+    background-color:hsl(330, 100%, 98%) ;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px 20px; 
+    font-family: "outfit", sans-serif;
+    width: 100%;
+}
+.prep-box p strong{
+    color: hsl(332, 51%, 32%);
+    font-size: 14px;
+}
+
+.prep-box .list{
+    padding-top: 10px;
+   padding-left: 5%;
+} 
+.prep-box .list li{
+    font-size: 13px;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.4; 
+    margin-bottom: 2%;
+}
+.prep-box .list li strong{
+    color: hsl(24, 5%, 18%);
+    font-weight: 600;
+}
+.prep-box .list li::marker{
+    color: hsl(332, 51%, 32%);
+    
+}
+
+
+.sub-section{
+    font-family: "outfit", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sub-section h2{
+    color: hsl(14, 45%, 36%);
+    padding-bottom: 20px;
+}
+.sub-section ul{
+   width: 90%;
+   padding-left: 8%;
+}
+.sub-section ul li{
+    font-size: 12px;
+    color: hsl(30, 10%, 34%);
+    line-height: 1.5;
+    margin-bottom: 4%;
+    padding-left: 12px
+}
+.sub-section ul li::marker{
+    color:hsl(14, 45%, 36%) ;
+}
+
+.recipe-page hr{
+    width: 100%;
+    border: none;
+    background-color: hsl(30, 18%, 87%);
+    height: 1px;
+}
+
+.sub-section ol{
+    width: 90%;
+    padding-left: 8%;
+}
+.sub-section ol li{
+    font-size: 12px;
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 5%;
+    padding-left: 10px;
+}
+.sub-section ol li strong{
+    font-size: 12px;
+}
+.sub-section ol li::marker{
+    color:hsl(14, 45%, 36%) ;
+    font-weight: 800;
+}
+.sub-section p{
+    font-size: 13px;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutri-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+.nutri-table .row{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    line-height: 4;
+    margin-right: 10%;
+}
+.nutri-table .row p{
+    font-size: 14px;
+    color: hsl(30, 10%, 34%);
+    width: 40px;
+}
+.nutri-table .row p strong{
+    color: hsl(14, 45%, 36%);
+    font-size: 14px;
+}
+.nutri-table hr{
+    width: 100%;
+}
+
+/* footer */
+.attribution { font-size: 11px;
+    text-align: center; 
+    padding-top: 20px;
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:768px) {
+    .container{
+        width: 500px;
+    }
+    .recipe-page .banner img{
+        width: 100%;
+    }
+    .sub-section ul{
+        width: 100%;
+        padding-left: 5%;
+    }
+    .sub-section ul li{
+        line-height: 2;
+        margin-bottom: 0%;
+    }
+    .sub-section ol{
+        width: 100%;
+        padding-left: 5%;
+        line-height: 1.4;
+    }
+    .sub-section ol li{
+        font-size: 11.5px;
+        margin-bottom: 2%;
+    }
+    .sub-section p{
+        font-size: 12px;
+    }
+    .nutri-table .row{
+        justify-content:space-between;
+        line-height: 3;
+        margin-left: 3%;
+        margin-right: 0%;
+        width: 60%;
+    }
+    
+}
